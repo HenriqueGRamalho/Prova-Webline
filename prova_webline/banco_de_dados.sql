@@ -11,8 +11,8 @@ CREATE TABLE montadoras (
 CREATE TABLE automoveis (
     codigo INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
-    placa VARCHAR(10) NOT NULL UNIQUE,
-    chassi VARCHAR(50) NOT NULL UNIQUE,
+    placa VARCHAR(7) NOT NULL UNIQUE,
+    chassi VARCHAR(17) NOT NULL UNIQUE,
     montadora INT,
     FOREIGN KEY (montadora) REFERENCES montadoras(codigo)
     
